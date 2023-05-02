@@ -34,7 +34,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
     'simply-kravings.herokuapp.com',
     'www.simplykravings.com',
-    'simplykravings.com'
+    'simplykravings.com',
 ]
 
 
