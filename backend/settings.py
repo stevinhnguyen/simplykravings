@@ -30,7 +30,11 @@ SECRET_KEY = 'django-insecure--2^r$y811vf(=-#rh(vybd)vs*+=6uy)q&p1&s+92bud!1^_pm
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost', '127.0.0.1', 'simply-kravings.herokuapp.com'
+    'localhost',
+    '127.0.0.1',
+    'simply-kravings.herokuapp.com',
+    'www.simplykravings.com',
+    'simplykravings.com'
 ]
 
 
@@ -43,12 +47,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #new
+    # new
     'base.apps.BaseConfig',
-    #react-django
+    # react-django
     'rest_framework',
     'corsheaders',
-    #'storages',
+    # 'storages',
 
 ]
 
@@ -99,14 +103,14 @@ SIMPLE_JWT = {
 }
 
 MIDDLEWARE = [
-    #new
-    #react-django
+    # new
+    # react-django
     "corsheaders.middleware.CorsMiddleware",
 
     'django.middleware.security.SecurityMiddleware',
 
-    #new
-    #production
+    # new
+    # production
     "whitenoise.middleware.WhiteNoiseMiddleware",
 
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -222,4 +226,4 @@ AWS_STORAGE_BUCKET_NAME = 'simplykravings-bucket'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 if os.getcwd() == '/app':
-    DEBUG = False 
+    DEBUG = False
