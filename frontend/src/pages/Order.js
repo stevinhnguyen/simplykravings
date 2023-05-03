@@ -140,7 +140,7 @@ function PlaceOrder() {
                           />
                         </Col>
                         <Col>
-                          <Link to={`/product/${item._id}`}>{item.name}</Link>
+                          <Link to={`/product/${index + 1}`}>{item.name}{console.log(index+1)}</Link>
                         </Col>
                         <Col md={4}>
                           {item.quantity} X ${item.price} = $
