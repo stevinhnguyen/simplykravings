@@ -160,7 +160,7 @@ DATABASES = {
         'NAME': 'SimplyKraving',
         'USER': 'root',
         'PASSWORD': os.environ.get('DB_PASS'),
-        'HOST': 'database-1.cyj0po8ezuvg.us-east-2.rds.amazonaws.com',
+        'HOST': 'simply-kravings.cntcnrv5q8li.us-east-1.rds.amazonaws.com',
         'PORT': '3306'
     }
 }
