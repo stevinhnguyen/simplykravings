@@ -138,9 +138,10 @@ function PlaceOrder() {
                             fluid
                             rounded
                           />
+                          <p>{item._id}</p>
                         </Col>
                         <Col>
-                          <Link to={`/product/${index + 1}`}>{item.name}{console.log(index+1)}</Link>
+                          <Link to={`/product/${item._id}`}>{item.name}</Link>
                         </Col>
                         <Col md={4}>
                           {item.quantity} X ${item.price} = $
