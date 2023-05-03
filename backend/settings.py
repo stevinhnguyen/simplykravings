@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     # react-django
     'rest_framework',
     'corsheaders',
-    # 'storages',
+    'storages',
 
 ]
 
@@ -157,7 +157,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'SimplyKraving',
+        'NAME': 'simplykravings',
         'USER': 'root',
         'PASSWORD': os.environ.get('DB_PASS'),
         'HOST': 'simply-kravings.cntcnrv5q8li.us-east-1.rds.amazonaws.com',
