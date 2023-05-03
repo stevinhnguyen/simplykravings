@@ -138,7 +138,6 @@ function PlaceOrder() {
                             fluid
                             rounded
                           />
-                          <p>{item._id}</p>
                         </Col>
                         <Col>
                           <Link to={`/product/${item._id}`}>{item.name}</Link>
